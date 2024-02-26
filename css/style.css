@@ -1,0 +1,924 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: auto;
+}
+.wrapper{
+    display: block;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+}
+.row_menu_block_visible_content{ 
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    min-width: 100%;
+}
+.button_facebook{
+    color: #000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 46px;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    margin-top: 25px;
+    margin-right: 15px;
+}
+.button_instagram{
+    color: #000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 46px;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    margin-top: 25px;
+    margin-right: 15px;
+}
+.button_twitter{
+    color: #000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 46px;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    margin-top: 25px;
+    margin-right: 15px;
+}
+.svg-inline--fa fa-twitter fa-w-16{
+    color: #000;
+
+}
+.svg-inline--fa fa-instagram fa-w-14{
+    color: #000;
+}
+.button_facebook:hover{
+    animation: color_hover_button_facebook 0.75s ease forwards;
+}
+.button_instagram:hover{
+    animation: color_hover_button_instagram 0.75s ease forwards;
+}
+.button_twitter:hover{
+    animation: color_hover_button_twitter 0.75s ease forwards;
+}
+.row_menu_block{ 
+    display: block;
+    background-color: white;
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    justify-content: center;
+    max-width: 100%;
+    min-width: 100%;
+}
+.row_main_block{
+    display: block;
+    margin-top: 50px;
+}
+.row_footer_block{
+    display: block;
+}
+.row_menu_block__element_logotype{
+    display: block;
+}
+.row_menu_block__element_logotype_anchor{
+    font-size: 60px;
+    margin-right: 15px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    text-decoration: none;
+}
+.row_menu_block__element_dynamic_content{
+    display: block;
+}
+.row_menu_block__element_dynamic_button{
+    background-color: white;
+    border: 1px solid black;
+}
+.row_menu_block__element_dynamic_button{
+    display: none;
+}
+.row_menu_block__element_logotype_anchor:hover{
+    animation: color_hover_anchor 0.75s ease forwards;
+}
+.row_menu_block__element_list_anchor_button_reg{
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: white;
+    margin-right: 20px;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.row_menu_block__element_list_anchor_button_reg:hover{
+    animation: color_hover 0.75s ease forwards;
+}
+.row_menu_block__element_list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+.row_menu_block__element_list_lang{
+    border: 0px;
+    font-size: 35px;
+}
+.row_menu_block__element_list_lang:hover{
+    animation: color_hover_lang 0.75s ease forwards;
+}
+.row_menu_block__element_list_anchor_log{
+    font-size: 35px;
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    color: #000;
+    margin-right: 5px;
+}
+.row_menu_block__element{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-inline-start: 0px;
+}
+.row_menu_block__element_list_anchor:hover{
+    animation: color_hover_anchor 0.75s ease forwards;
+}
+.row_menu_block__element_list_anchor_log:hover{
+    animation: color_hover_anchor 0.75s ease forwards;
+}
+.row_menu_block__element_list_anchor{
+    margin-right: 25px;
+    font-size: 35px;
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 7px;
+}
+.row_menu_block__element_logotype_anchor_hidden{
+    margin-right: 25px;
+    font-size: 30px;
+    font-family: "Satisfy", cursive;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 7px;
+}
+.row_menu_block__element_list_anchor_hidden{
+    font-size: 25px;
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    color: #000;
+    margin-right: 5px;
+}
+.row_menu_block__element_list_anchor_log_hidden{
+    font-size: 25px;
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    color: #000;
+    margin-right: 5px;
+}
+.row_menu_block__element_list_lang_hidden{
+    border: 0px;
+    font-size: 25px;
+}
+.row_menu_block__element_list_anchor_button_reg_hidden{
+    height: 20px;
+    font-size: 12px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: white;
+    margin-right: 20px;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.row_menu_block__element_list_lang_hidden:hover{
+    animation: color_hover_lang 0.75s ease forwards;
+}
+.row_menu_block__element_list_anchor_hidden:hover{
+    animation: color_hover_anchor 0.75s ease forwards;
+}
+.row_menu_block__element_list_anchor_hidden:hover{
+    animation: color_hover_anchor 0.75s ease forwards;
+}
+.row_menu_block__element_logotype_anchor_hidden:hover{
+    animation: color_hover_anchor 0.75s ease forwards;
+}
+.row_menu_block__element_list_anchor_button_reg_hidden:hover{
+    animation: color_hover 0.75s ease forwards;
+}
+.row_menu_block__element_list_visible{
+    display: flex;
+}
+
+.row_menu_block__element_list_hidden_logotype{
+    display: flex;
+    flex-direction: column;
+    min-width: 90px;
+    max-width: 90px;
+    margin-right: auto;
+}
+.row_menu_block__element_list_hidden_list{
+    display: flex;
+    flex-direction: column;
+}
+.row_menu_block__element_list_hidden{
+    display: none;
+}
+.row_menu_block__element_list_hidden .visible{
+    display: flex;
+    width: 100%;
+    
+}
+.visible{
+    display: flex;
+    width: 100%;
+    border-bottom: 0.2px solid black;
+}
+.row_main_block__element_intro_subtitle{
+    font-size: 2.88651rem;
+    font-family: "Volkhov","DM Serif Display",cursive;
+    font-weight: 700;
+    color: #181E4B;
+    margin-bottom: 5px;
+}
+.row_main_block__element_intro_left{
+    display: block;
+    max-width: 550px;
+}
+.row_main_block__element_intro_right{
+    display: flex;
+    align-items: end;
+}
+.row_main_block__element_intro_title{
+    color: #DF6951;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 600;
+    line-height: 1.2px;
+}
+.row_main_block__element_intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row_main_block__element_intro_text{
+    font-family: "Poppins", "Rubik", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+    font-weight: 500 !important;
+    color: #5E6282;
+    
+}
+.row_main_block__element_intro_button{
+    background-color: #f88045;
+    padding: 0.8rem, 1.7rem;
+    border-radius: 0.625rem;
+    border: 0;
+    margin-right: 45px;
+}
+.anchor{
+    text-decoration: none;
+    color: aliceblue;
+}
+.row_main_block__element_intro_button:hover{
+    animation: color_hover_button_demo 0.75s ease forwards;
+}
+.row_main_block__element_intro_text_button{
+    font-size: 18px;
+    color: azure;
+    text-decoration: none;
+    font-family: "Poppins", "Rubik", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.row_main_block__element_intro_text_button_demo{
+    display: block;
+    position: relative;    
+    width: 64px;
+    height: 64px;
+    background-color: #f88045;
+    margin-right: 30px;
+}
+.round_cir{
+    border-radius: 50%;
+}
+.row_main_block__element_intro_button_block{
+    display: flex;
+}
+.row_main_block__element_intro_text_button_demo:hover{
+    animation: color_hover_button_demo 0.75s ease forwards;
+}
+.row_main_block__element_intro_text_button_demo_comm{
+    display: flex;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: "Poppins", "Rubik", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #5E6282;
+    align-items: center;
+}
+
+.row_main_block_desitnations_content__element_title_time{
+    font-size: 25px;
+    color: #5E6282;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.row_main_block_desitnations{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.row_main_block_desitnations_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
+}
+.row_main_block_desitnations_title_sell{
+    color: #5E6282;
+    font-size: 22px;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin-bottom: 10px;
+}
+.row_main_block_desitnations_title_top{
+    color: #14183E;
+    font-family: "Volkhov","DM Serif Display",cursive;
+    font-size: 3rem;
+}
+.row_main_block_desitnations_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.row_main_block_desitnations_content__element{
+    display: block;
+}
+.row_main_block_desitnations_content__element_title_block{    
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;    
+    column-width: 250px;
+    flex-wrap: wrap;
+}
+.row_main_block_desitnations_content__element_title{
+    font-size: 2.1rem;
+    color: #181E4B;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.row_main_block_desitnations_content__element_title_popular{
+    font-size: 25px;
+    color: #5E6282;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.row_main_block_desitnations_content__element_title_price{
+    font-size: 25px;
+    color: #5E6282;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.row_main_block_desitnations_content__element_title_popular_price_block{
+    display: flex;
+    justify-content: space-around
+}
+.row_main_block_desitnations_content__element_anchor{
+    text-decoration: none;
+}
+.row_main_block_service_text_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row_main_block_service_text_title{
+    font-size: 28px;
+    color: #5E6282;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.row_main_block_service_text_content{
+    font-size: 3.5rem;
+    color: #5E6282;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.row_main_block_service{
+    display: block;
+    margin-top: 270px;
+}
+.row_main_block_service_content_block{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.row_main_block_service_content_block__element{
+    display: block;
+    margin-right: 10px;
+}
+#row_main_block_service_content{
+    margin-top: 64px;
+}
+.row_main_block_service_content_block__element_title{
+    font-size: 1.7rem;
+    color: #181E4B;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.row_main_block_service_content_block__element_content{
+    font-size: 1.2rem;
+    color: #5E6282;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+#service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row_main_block_flights{
+    display: block;
+    margin-top: 400px;
+    margin-bottom: 400px;
+}
+.row_main_block_flights_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.row_main_block_flights__element{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    column-width: 250px;
+    flex-wrap: wrap;
+}
+.row_main_block_flights__element_block{
+    display: flex;
+    align-items: baseline;
+}
+.row_main_block_flights__element_time{
+    font-size: 1.2rem;
+    color: #5E6282;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.row_main_block_flights__element_title{
+    font-size: 2.1rem;
+    color: #181E4B;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.row_main_block_flights__element_button_like{
+    border: 0px;
+    background-color: rgb(255, 255, 255);
+    height: 10px;
+    width: 10px;
+}
+.row_main_block_flights__element_button_like_content{
+    font-size: 1.2rem;
+    color: rgb(189, 186, 186);
+}
+.row_main_block_flights__element_button_like_content:hover{
+    animation: color_like_hover 0.75s ease forwards;
+}
+.row_main_block_flights__element_button_like_content .animate{
+    animation: color_like 0.75s ease forwards;
+}
+.animate:active{
+    animation: color_like 0.75s ease forwards;
+}
+.row_main_block_flights__element_button_like_content .unanimate{
+    animation: color_unlike 0.75s ease forwards;
+}
+.unanimate:active{
+    animation: color_like 0.75s ease forwards;
+}
+.row_main_block_flights_title__element{
+    font-size: 2.1rem;
+    color: #181E4B;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.row_main_block_flights_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.row_main_block_flights_content_anchor{
+    text-decoration: none;
+}
+.row_main_block_bookings_title{
+    font-size: 1.3rem;
+    color: #5E6282;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.row_main_block_bookings_content_block{
+    display: flex;
+    justify-content: center;
+}
+.row_main_block_bookings_content__element{
+    display: block;
+    margin-bottom: 35px;
+}
+.row_main_block_bookings_content_block__element{
+    display: block;
+    margin-right: 300px;
+}
+.row_main_block_bookings_content_block__manual{
+    display: flex;
+    justify-content: center;
+}
+.row_main_block_bookings__element{
+    display: flex;
+    flex-direction: column;
+    column-width: 250px;
+}
+.row_main_block_bookings_content__element_title__element{
+    font-size: 1.4rem;
+    color: #5E6282;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.row_main_block_bookings_content__element_title__element::before{
+    content: "● ";
+    color: aqua;
+}
+.row_main_block_bookings_content__element_title__element:hover{
+    color: rgb(255, 0, 0);
+}
+.row_main_block_bookings{
+    display: block;
+    margin-bottom: 500px;
+}
+.row_main_block_bookings_content__element_content__element_title{
+    font-size: 1.2rem;
+    color: #5E6282;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.row_main_block_bookings_content__element_content__element_text{
+    font-size: 1.0rem;
+    color: #5E6282;
+    font-family: "Poppins","Rubik","Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.row_main_block_bookings_content_block__manual_anchor{
+    text-decoration: none;
+}
+.row_footer_block__element_anchor{
+    font-size: 22px;
+    color: #5E6282;
+    text-decoration: none;
+}
+.row_footer_block__element_anchor:hover{
+    animation: color_hover_anchor_foot 0.75s ease forwards;
+}
+.row_footer_block__element_title{
+    font-size: calc(1.25156rem + .01875vw); 
+}
+.row_footer_block__element_company_anchor_block{
+    display: flex;
+    flex-direction: column;
+}
+.row_footer_block__element_contact_anchor_block{
+    display: flex;
+    flex-direction: column;
+}
+.row_footer_block__element_more_anchor_block{
+    display: flex;
+    flex-direction: column;
+}
+
+.row_footer_block__element_rights{
+    display: flex;   
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.row_footer_block__element_rights_text{
+    display: grid;
+    color: #201f1f;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+#row_footer_block__element{
+    display: block;
+    column-width: 200px;
+    margin-right: 70px;
+    margin-top: 25px;
+}
+#row_footer_block{
+    display: block;
+    column-width: 200px;
+    margin-right: 70px;
+}
+.row_footer_block__element_title_main{
+    font-size: calc(2.25156rem + .01875vw);
+    font-family: "Kalam", cursive;
+}
+.row_footer_block__element{
+    display: flex;
+    justify-content: center;
+}
+.row_footer_block__element_button_download{
+    display: flex;
+}
+.row_footer_block__element_rights_e-address{
+    color: #000;
+}
+.row_footer_block__element_rights_e-address:hover{
+    animation: color_hover_anchor 0.75s ease forwards;
+}
+.row_footer_block__element_text{
+    font-size: 22px;
+    color: #5E6282;
+}
+.anchor_footer{
+    text-decoration: none;
+    color: #5E6282;
+}
+.anchor_footer:hover{
+    animation: color_hover_anchor 0.75s ease forwards;
+}
+.row_footer_block__element_content{
+    display: flex;
+    justify-content: center;
+}
+.row_footer_block__element_social{
+    display: block;
+    max-width: 300px;
+}
+#row_footer_block__element:last-child{
+    margin-right: 0px;
+}
+@keyframes color_hover{
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color: orange;
+    }
+    100%{
+        background-color: red;
+    }
+}
+@keyframes color_hover_anchor{
+    0%{
+        color: black;
+    }
+    50%{
+        color: orange;
+    }
+    100%{
+        color: red;
+    }
+}
+@keyframes color_hover_anchor_foot{
+    0%{
+        color: #5E6282;
+    }
+    50%{
+        color: orange;
+    }
+    100%{
+        color: red;
+    }
+}
+@keyframes color_hover_lang{
+    0%{
+        color: black;
+    }
+    50%{
+        color: rgb(255, 55, 0);
+    }
+    100%{
+        color: coral;
+    }
+}
+@keyframes color_hover_button_facebook{
+    0%{
+        background-color: rgb(255, 255, 255);
+    }
+
+    100%{
+        background-color: rgb(35, 45, 125);
+        color: aliceblue;
+    }
+}
+@keyframes color_hover_button_instagram{
+    0%{
+        background-color: rgb(255, 255, 255);
+    }
+
+    100%{
+        background: rgb(169,0,244);
+        background: linear-gradient(90deg, rgba(169,0,244,1) 0%, rgba(241,0,174,1) 20%, rgba(255,9,111,1) 41%, rgba(255,0,102,1) 63%, rgba(255,0,0,1) 100%);
+        color: aliceblue;
+    }
+}
+@keyframes color_hover_button_demo{
+    0%{
+        background-color: #f88045;
+    }
+    100%{
+        background-color: red;
+    }
+}
+@keyframes color_hover_button_twitter{
+    0%{
+        background-color: rgb(255, 255, 255);
+    }
+
+    100%{
+        background-color: rgb(20, 215, 254);
+        color: aliceblue;
+    }
+}
+@keyframes color_like_hover{
+    0%{
+        color: rgb(189, 186, 186);
+    }
+
+    100%{
+        color: rgb(240, 205, 205);
+    }
+}
+@keyframes color_like{
+    0%{
+        color: rgb(189, 186, 186);
+    }
+
+    100%{
+        color: red
+    }
+}
+@keyframes color_unlike{
+    0%{
+        color: red
+    }
+
+    100%{
+        color: rgb(189, 186, 186);
+    }
+}
+@media (max-width: 1299px) {
+    .wrapper{
+        max-width: auto;
+    }
+}
+@media (max-width: 1238px) {
+    #row_main_block_service_content{
+        margin-top: -3px;
+
+    }
+}
+
+@media (max-width: 1140px){
+    .row_menu_block__element_list_anchor{
+        margin-right: 3px;
+    }
+    .row_menu_block__element_list_anchor_log{
+
+        margin-right: 3px;
+    }
+    .row_menu_block__element_list_anchor_button_reg{
+        margin-right: 20px;
+    }
+}
+@media (max-width: 1040px){
+    .wrapper{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@media (max-width: 973px){
+    .hidden{
+        display: none;
+    }
+    .row_menu_block__element_dynamic_button{
+        display: block;
+        margin-right: 15px;
+    }
+    .row_menu_block_visible_content{ 
+        display: block;
+        margin-left: auto;
+        margin-bottom: 30px;
+        max-width: auto;
+        min-width: auto;
+    }
+    .row_menu_block{
+        justify-content: normal;
+    } 
+    .row_footer_block__element_button_download{
+        display: block;
+    }
+}
+@media (max-width: 972px) {
+    .row_footer_block__element{
+        display: block;
+    }
+    .row_footer_block__element_social{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        max-width: 650px;
+    }
+    .anchor_footer{
+        margin-right: 10px;
+    }
+}
+@media (max-width: 942px) {
+    .row_menu_block__element_logotype{
+        display: none;
+    }
+    #row_footer_block{
+        display: none;
+        column-width: 0px;
+    }
+    .row_menu_block__element_logotype_anchor{
+        display: none;
+    }
+    .row_footer_block__element_text_block{
+        display: none;
+    }
+    .row_footer_block__element_title_main{
+        display: none;
+    }
+    .row_footer_block__element_text{
+        display: none;
+    }
+}
+@media (max-width: 842px) {
+    .row_main_block__element_intro{
+        flex-direction: column;
+    }
+}
+@media (max-width: 747px) {
+    .row_main_block_service_content_block{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 705px) {
+    .row_menu_block__element{
+        padding: 0;
+    }
+}
+@media (max-width: 664px) {
+    .row_main_block_bookings{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row_main_block_bookings_content_block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row_main_block_bookings_content_block__element{
+        margin-right: 0px;
+    }
+}
+@media (max-width: 650px) {
+    #row_footer_block{
+        column-width: 0px;
+        margin-right: 0px;
+    }
+}
+@media (max-width: 567px) {
+    .row_footer_block__element_social{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 212px;
+    }
+}
+@media (max-width: 407px) {
+    .row_footer_block__element_content{
+        flex-wrap: wrap;
+    }
+    #row_footer_block__element{
+        column-width: 100px;
+        margin-right: 40px;
+    }
+}
+@media (max-width: 392px) {
+    .row_footer_block__element_content{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+    #row_footer_block__element{
+        column-width: 100px;
+        margin-right: 0px;
+    }
+}

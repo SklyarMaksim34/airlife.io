@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-EN" id="html">
+    <head>
+        <title>AirLife</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Sklyar Maksim">
+        <meta name="copyright" content="Sklyar Maksim">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="" type="image/x-icon">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">   
+            <header class="row_menu_block" id="header">
+                <menu class="row_menu_block__element">
+                    <div class="row_menu_block_visible_content">
+                        <div class="row_menu_block__element_logotype">
+                            <a class="row_menu_block__element_logotype_anchor hidden" href="" id="logotype">AirLife</a>
+                        </div>
+                        <nav class="row_menu_block__element_list">    
+                            <div class="row_menu_block__element_list_visible">
+                                <a class="row_menu_block__element_list_anchor hidden" href="#desitnations" >Desitnations</a>
+                                <a class="row_menu_block__element_list_anchor hidden" href="#service" >Service</a>
+                                <a class="row_menu_block__element_list_anchor hidden" href="#flights" >Flights</a>
+                                <a class="row_menu_block__element_list_anchor hidden" href="#bookings" >Bookings</a>
+                                <a class="row_menu_block__element_list_anchor_log hidden" href="#!" >Log In</a>
+                                <button data-ripple="" class="row_menu_block__element_list_anchor_button_reg hidden" type="submit" id="reg">Sign Up</button>
+                                <select name="lang" class="row_menu_block__element_list_lang hidden" id="lang" id="lang">
+                                    <option value="en" class="en">EN</option>                     
+                                    <option value="ua" class="ua">UA</option>
+                                    <option value="ru" class="ru">RU</option>
+                                </select>
+                                <div class="row_menu_block__element_dynamic">
+                                    <button class="row_menu_block__element_dynamic_button" id="button_menu__element"><span class="row_menu_block__element_dynamic_content"><img src="img/menu-svgrepo-com.svg" alt="" width="22" height="22"></span></button>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>                        
+                    <div class="row_menu_block__element_list_hidden" id="block_hidden">
+                        <div class="row_menu_block__element_list_hidden_logotype">
+                            <a class="row_menu_block__element_logotype_anchor_hidden visibl" href="" id="logotype">AirLife</a>
+                        </div>
+                        <div class="row_menu_block__element_list_hidden_list">
+                            <a class="row_menu_block__element_list_anchor_hidden " href="#desitnations" >Desitnations</a>
+                            <a class="row_menu_block__element_list_anchor_hidden " href="#service" >Service</a>
+                            <a class="row_menu_block__element_list_anchor_hidden " href="#flights" >Flights</a>
+                            <a class="row_menu_block__element_list_anchor_hidden " href="#bookings" >Bookings</a>
+                            <a class="row_menu_block__element_list_anchor_log_hidden " href="#!" >Log In</a>
+                            <button data-ripple="" class="row_menu_block__element_list_anchor_button_reg_hidden " type="submit" id="reg">Sign Up</button>
+                            <select name="lang" class="row_menu_block__element_list_lang_hidden" id="lang" id="lang">
+                                <option value="en" class="en">EN</option>                     
+                                <option value="ua" class="ua">UA</option>
+                                <option value="ru" class="ru">RU</option>
+                            </select>
+                        </div>
+                    </div>                            
+                </menu>
+            </header>
+            <main class="row_main_block">
+                <section class="row_main_block__element_intro">
+                    <div class="row_main_block__element_intro_left">
+                        <h4 class="row_main_block__element_intro_title">Best Destinations around the world</p>
+                        <h1 class="row_main_block__element_intro_subtitle">Travel, enjoy and live a new and full life</h1>
+                        <p class="row_main_block__element_intro_text">Built Wicket longer admire do barton vanity itself do in it.Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+                        <div class="row_main_block__element_intro_button_block">
+                            <button class="row_main_block__element_intro_button">
+                                <p class="row_main_block__element_intro_text_button"><a href="#!" class="anchor">Find out more</a></p>
+                            </button>
+                            <a class="anchor" href="#!">
+                                <span class="row_main_block__element_intro_text_button_demo round_cir">
+                                    <img src="img/play.svg" style="z-index: 2;color: aliceblue;position: relative;left:26px;top:24px;" width="15" alt="">
+                                </span>
+                            </a>
+                            <span class="row_main_block__element_intro_text_button_demo_comm">Play Demo</span>
+                        </div>
+                    </div>
+                    <div class="row_main_block__element_intro_right">
+                        <img src="img/hero-img.png" alt="" height="516" width="440">
+                    </div>
+                </section>
+                <section class="row_main_block_desitnations" id="desitnations">
+                    <section class="row_main_block_desitnations_title">
+                        <p class="row_main_block_desitnations_title_sell">Top Selling</p>
+                        <h1 class="row_main_block_desitnations_title_top">Top Destinations</h1>
+                    </section>
+                    <section class="row_main_block_desitnations_content">
+                        <article class="row_main_block_desitnations_content__element">
+                            <a href="#!" class="row_main_block_desitnations_content__element_anchor">
+                                <section class="row_main_block_desitnations_content__element_title_block">
+                                    <h3 class="row_main_block_desitnations_content__element_title">London</p>
+                                    <img src="img/OIP (1).jpg" alt="" width="250" height="230">
+                                    <article class="row_main_block_desitnations_content__element_title_popular_price_block">
+                                        <p class="row_main_block_desitnations_content__element_title_time">9 days</p>
+                                        <p class="row_main_block_desitnations_content__element_title_popular">734</p>
+                                        <p class="row_main_block_desitnations_content__element_title_price">$10k</p>
+                                    </article>
+                                </section>
+                            </a>
+                        </article>
+                        <article class="row_main_block_desitnations_content__element">
+                            <a href="#!" class="row_main_block_desitnations_content__element_anchor">
+                                <section class="row_main_block_desitnations_content__element_title_block">
+                                    <h3 class="row_main_block_desitnations_content__element_title">Maldives</p>
+                                    <img src="img/завантаження.jpg" alt="" width="250" height="230">
+                                    <article class="row_main_block_desitnations_content__element_title_popular_price_block">
+                                        <p class="row_main_block_desitnations_content__element_title_time">13 days</p>
+                                        <p class="row_main_block_desitnations_content__element_title_popular">324</p>
+                                        <p class="row_main_block_desitnations_content__element_title_price">$15k</p>
+                                    </article>
+                                </section>
+                            </a>
+                        </article>
+                        <article class="row_main_block_desitnations_content__element">
+                            <a href="#!" class="row_main_block_desitnations_content__element_anchor">
+                                <section class="row_main_block_desitnations_content__element_title_block">
+                                    <h3 class="row_main_block_desitnations_content__element_title">Greece</p>
+                                    <img src="img/завантаження (1).jpg" alt="" width="250" height="230">
+                                    <article class="row_main_block_desitnations_content__element_title_popular_price_block">
+                                        <p class="row_main_block_desitnations_content__element_title_time">16 days</p>
+                                        <p class="row_main_block_desitnations_content__element_title_popular">784</p>
+                                        <p class="row_main_block_desitnations_content__element_title_price">$7k</p>
+                                    </article>
+                                </section>
+                            </a>
+                        </article>
+                        <article class="row_main_block_desitnations_content__element">
+                            <a href="#!" class="row_main_block_desitnations_content__element_anchor">
+                                <section class="row_main_block_desitnations_content__element_title_block">
+                                    <h3 class="row_main_block_desitnations_content__element_title">Bangkok</p>
+                                    <img src="img/OIP.jpg" alt="" width="250" height="230">
+                                    <article class="row_main_block_desitnations_content__element_title_popular_price_block">
+                                        <p class="row_main_block_desitnations_content__element_title_time">12 days</p>
+                                        <p class="row_main_block_desitnations_content__element_title_popular">364</p>
+                                        <p class="row_main_block_desitnations_content__element_title_price">$8k</p>
+                                    </article>
+                                </section>
+                            </a>
+                        </article>
+                    </section>
+                </section>
+                <section class="row_main_block_service" id="service">
+                    <article class="row_main_block_service_text_block">
+                        <p class="row_main_block_service_text_title">Category</p>
+                        <h1 class="row_main_block_service_text_content">We Offer Best Services</h1>
+                    </article>
+                    <section class="row_main_block_service_content_block">
+                        <article class="row_main_block_service_content_block__element">
+                            <h3 class="row_main_block_service_content_block__element_title">Best Flights</h3><br>
+                            <p class="row_main_block_service_content_block__element_content">Engrossed listening. Park gate sell they west hard for the.</p>
+                        </article>
+                        <article class="row_main_block_service_content_block__element">
+                            <h3 class="row_main_block_service_content_block__element_title">Calculated Weather</h3>
+                            <p class="row_main_block_service_content_block__element_content" id="row_main_block_service_content">Built Wicket longer admire do barton vanity itself do in it.</p>
+                        </article>
+                        <article class="row_main_block_service_content_block__element">
+                            <h3 class="row_main_block_service_content_block__element_title">Customization</h3><br>
+                            <p class="row_main_block_service_content_block__element_content">We deliver outsourced aviation services for military customers</p>
+                        </article>
+                        <article class="row_main_block_service_content_block__element">
+                            <h3 class="row_main_block_service_content_block__element_title">Local Events</h3><br>
+                            <p class="row_main_block_service_content_block__element_content">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+                        </article>
+                    </section>
+                </section>
+                <section class="row_main_block_flights" id="flights">
+                    <section class="row_main_block_flights_title">
+                        <h3 class="row_main_block_flights_title__element">All flights that are scheduled in the near future</h3>
+                    </section>
+                    <section class="row_main_block_flights_content">
+                        <a href="#!" class="row_main_block_flights_content_anchor">
+                            <article class="row_main_block_flights__element">
+                                <h3 class="row_main_block_flights__element_title">London</h3>
+                                <img src="img/OIP (1).jpg" alt="" width="250" height="230">
+                                <article class="row_main_block_flights__element_block">
+                                    <p class="row_main_block_flights__element_time">24 February - 5 March</p>
+                                    <div class="button_animate">
+                                        <button class="row_main_block_flights__element_button_like" id="button_like">
+                                            <span class="row_main_block_flights__element_button_like_content">&#10084;</span>
+                                        </button>
+                                    </div>
+                                </article>
+                            </article>
+                        </a>
+                        <a href="#!" class="row_main_block_flights_content_anchor">
+                            <article class="row_main_block_flights__element">
+                                <h3 class="row_main_block_flights__element_title">Maldives</h3>
+                                <img src="img/завантаження.jpg" alt="" width="250" height="230">
+                                <article class="row_main_block_flights__element_block">
+                                    <p class="row_main_block_flights__element_time">14 March - 27 March</p>
+                                    <div class="button_animate">
+                                        <button class="row_main_block_flights__element_button_like" id="button_like">
+                                            <span class="row_main_block_flights__element_button_like_content">&#10084;</span>
+                                        </button>
+                                    </div>
+                                </article>
+                            </article>
+                        </a>
+                        <a href="#!" class="row_main_block_flights_content_anchor">
+                            <article class="row_main_block_flights__element">
+                                <h3 class="row_main_block_flights__element_title">Greece</h3>
+                                <img src="img/завантаження (1).jpg" alt="" width="250" height="230">
+                                <article class="row_main_block_flights__element_block">
+                                    <p class="row_main_block_flights__element_time">4 April - 20 April</p>
+                                    <div class="button_animate">
+                                        <button class="row_main_block_flights__element_button_like" id="button_like">
+                                            <span class="row_main_block_flights__element_button_like_content">&#10084;</span>
+                                        </button>
+                                    </div>
+                                </article>
+                            </article>
+                        </a>
+                        <a href="#!" class="row_main_block_flights_content_anchor">
+                            <article class="row_main_block_flights__element">
+                                <h3 class="row_main_block_flights__element_title">Bangkok</h3>
+                                <img src="img/OIP.jpg" alt="" width="250" height="230">
+                                <article class="row_main_block_flights__element_block">
+                                    <p class="row_main_block_flights__element_time">29 May - 10 June</p>
+                                    <div class="button_animate">
+                                        <button class="row_main_block_flights__element_button_like" id="button_like">
+                                            <span class="row_main_block_flights__element_button_like_content">&#10084;</span>
+                                        </button>
+                                    </div>
+                                </article>
+                            </article> 
+                        </a>
+                    </section>
+                </section>
+                <section class="row_main_block_bookings" id="bookings">
+                    <section class="row_main_block_bookings_content_block">
+                        <section class="row_main_block_bookings_content_block__element">
+                            <p class="row_main_block_bookings_title">Easy and Fast</p>
+                            <article class="row_main_block_bookings_content__element_block">
+                                <article class="row_main_block_bookings_content__element">
+                                    <div class="row_main_block_bookings_content__element_title">
+                                        <h3 class="row_main_block_bookings_content__element_title__element">Step One</p>
+                                    </div>
+                                    <div class="row_main_block_bookings_content__element_content">
+                                        <h4 class="row_main_block_bookings_content__element_content__element_title">Choose Destination</h4>
+                                        <p class="row_main_block_bookings_content__element_content__element_text">Choose your favourite place. No matter where you travel inside the World.</p>
+                                    </div>
+                                </article>
+                                <article class="row_main_block_bookings_content__element">
+                                    <div class="row_main_block_bookings_content__element_title">
+                                        <h3 class="row_main_block_bookings_content__element_title__element">Step Two</p>
+                                    </div>
+                                    <div class="row_main_block_bookings_content__element_content">
+                                        <h4 class="row_main_block_bookings_content__element_content__element_title">Make Payment</h4>
+                                        <p class="row_main_block_bookings_content__element_content__element_text">After find your perfect spot, make your payment and get ready to travel.</p>
+                                    </div>
+                                </article>
+                                <article class="row_main_block_bookings_content__element">
+                                    <div class="row_main_block_bookings_content__element_title">
+                                        <h3 class="row_main_block_bookings_content__element_title__element">Step Three</p>
+                                    </div>
+                                    <div class="row_main_block_bookings_content__element_content">
+                                        <h4 class="row_main_block_bookings_content__element_content__element_title">Reach Airport on Selected Date</h4>
+                                        <p class="row_main_block_bookings_content__element_content__element_text">Lastly, you have to arrive at the airport on time and enjoy the vacation.</p>
+                                    </div>
+                                </article>
+                            </article>
+                        </section>
+                        <section class="row_main_block_bookings_content_block__manual">
+                            <a href="#!" class="row_main_block_bookings_content_block__manual_anchor">
+                                <article class="row_main_block_bookings__element">
+                                    <h3 class="row_main_block_flights__element_title">Bangkok</h3>
+                                    <img src="img/OIP.jpg" alt="" width="250" height="230">
+                                    <div class="row_main_block_flights__element_block">
+                                        <p class="row_main_block_flights__element_time">29 May - 10 June</p>
+                                        <div class="button_animate">
+                                            <button class="row_main_block_flights__element_button_like">
+                                                <span class="row_main_block_flights__element_button_like_content" id="button_like">&#10084;</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a> 
+                        </section>
+                    </section>
+                </section>
+            </main>
+            <footer class="row_footer_block">
+                <section class="row_footer_block__element">
+                    <section class="row_footer_block__element_content">
+                        <section class="row_footer_block__element_text_block hidden-foot" id="row_footer_block">
+                            <h2 class="row_footer_block__element_title_main">AirLife</h2>
+                            <p class="row_footer_block__element_text">
+                                Book your trip in minute, get full Control for much longer.
+                            </p>
+                        </section>
+                        <section class="row_footer_block__element_company" id="row_footer_block__element">
+                            <p class="row_footer_block__element_title">Company</p>
+                            <article class="row_footer_block__element_company_anchor_block">
+                                <a class="row_footer_block__element_anchor" href="#!">About</a>
+                                <a class="row_footer_block__element_anchor" href="#!">Careers</a>
+                                <a class="row_footer_block__element_anchor" href="#!">Mobile</a>
+                            </article>
+                        </section>
+                        <section class="row_footer_block__element_contact" id="row_footer_block__element">
+                            <p class="row_footer_block__element_title">Contact</p>
+                            <article class="row_footer_block__element_contact_anchor_block">
+                                <a class="row_footer_block__element_anchor" href="#!">Help/FAQ</a>
+                                <a class="row_footer_block__element_anchor" href="#!">Press</a>
+                                <a class="row_footer_block__element_anchor" href="#!">Affiliate</a>
+                            </article>
+                        </section>
+                        <section class="row_footer_block__element_more" id="row_footer_block__element">
+                            <p class="row_footer_block__element_title">More</p>
+                            <article class="row_footer_block__element_more_anchor_block">
+                                <a class="row_footer_block__element_anchor" href="#!">Airlinefees</a>
+                                <a class="row_footer_block__element_anchor" href="#!">Airline</a>
+                                <a class="row_footer_block__element_anchor" href="#!">Low fare tips</a>
+                            </article>
+                        </section>
+                    </section>
+                    <section class="row_footer_block__element_social">
+                        <button class="button_facebook">f</button>
+                        <button class="button_instagram"><svg class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" focusable="false" data-prefix="fab" style="position: relative;top: 3px" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></button>
+                        <button class="button_twitter"><svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></button>
+                        <p class="row_footer_block__element_anchor"><a href="#!" class="anchor_footer">Discover our app</a></p>
+                        <article class="row_footer_block__element_button_download">
+                            <a class="row_footer_block__element_anchor" href="#!"><img class="me-2" src="img/play-store.png" alt="play store"></a>
+                            <a class="row_footer_block__element_anchor" href="#!"><img src="img/завантаження.png" alt="apple store"></a>
+                        </article>
+                    </section>
+                </section>
+                <article class="row_footer_block__element_rights">
+                    <p class="row_footer_block__element_rights_text">All rights <span class="row_footer_block__element_rights_e-address">anonimkodo@gmail.com</span></p>
+                </article>
+            </footer>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
+</html>
