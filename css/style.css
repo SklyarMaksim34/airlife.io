@@ -871,7 +871,7 @@ body{
 }
 @media (max-width: 705px) {
     .row_menu_block__element{
-        padding: 0;
+        padding-top: 1em;
     }
 }
 @media (max-width: 664px) {
