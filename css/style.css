@@ -150,6 +150,9 @@ body{
     flex-direction: column;
     align-items: baseline;
     padding-inline-start: 0px;
+    margin-block-start: 0em;
+    padding-top: 1em;
+    margin-block-end: 1em;
 }
 .row_menu_block__element_list_anchor:hover{
     animation: color_hover_anchor 0.75s ease forwards;
